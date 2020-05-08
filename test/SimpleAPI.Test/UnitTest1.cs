@@ -21,10 +21,10 @@ namespace SimpleAPI.Testc
         [Fact]
         public void GetReturnWeatherForecastByName()
         {
-            var result = weatherForecastController.Get(1);   
+            var result = weatherForecastController.Get(2);   
             Assert.NotNull(result);
             // var expected = "Bracing";
-            Assert.Equal("Bracing", result.Value);
+            Assert.Equal("Chilly", result.Value);
         }
 
         public override string ToString()
