@@ -23,8 +23,8 @@ namespace SimpleAPI.Testc
         {
             var result = weatherForecastController.Get(1);   
             Assert.NotNull(result);
-            var expected = "Bracing";
-            Assert.Equal(expected, result.Value);
+            // var expected = "Bracing";
+            Assert.Equal("Bracing", result.Value);
         }
 
         public override string ToString()
